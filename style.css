@@ -356,8 +356,10 @@ hero-section::before {
 @media (max-width: 576px) {
     .hero-section {
         width: 100%;
-        min-height: 70vh; /* Slightly reduce height on small screens */
-        background-size: contain; /* Ensure the image fits within the small screen */
+        min-height: 70vh; /* Maintain a flexible but controlled height */
+        background-size: cover; /* Ensure the image covers the entire hero section */
+        background-position: center; /* Keep the image centered */
+        background-repeat: no-repeat; /* Prevent repeating */
     }
 
     .hero-text h1 {
