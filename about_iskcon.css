@@ -1,0 +1,84 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.Hero {
+    background-image: url('photos/founder1/img1.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white; /* Ensures text is visible on the background image */
+}
+
+.first-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Content container */
+.container {
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent black background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    color: white;
+}
+
+/* Heading Styles */
+.top_heading {
+    font-size: 48px;
+    color: white; /* Golden color for the heading */
+}
+
+/* Paragraph Styles */
+.container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: white; /* White color for paragraphs */
+}
+
+/* Heading inside container */
+.container h1 {
+    font-size: 32px;
+    color: goldenrod; /* Golden color for sub-headings */
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .top_heading {
+        font-size: 36px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
