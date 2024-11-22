@@ -87,14 +87,14 @@ nav a img {
 
 
 
- .hero-section {
+/* .hero-section {
     position: relative;
     height: 100vh;
     overflow: hidden;
-    background-image: url('hero_first_back/img2.jpg'); /* Background image */
-    background-size:contain;
+    background-image: url('hero_first_back/img2.jpg'); 
+    background-size: cover; 
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -112,6 +112,147 @@ nav a img {
     background-image: inherit;
     background-size: cover;
     background-position: center;
+    filter: blur(8px); 
+    z-index: -1;
+}
+
+.hero-text {
+    width: 50%;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(185, 65, 134);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    color: rgb(185, 65, 134);
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel {
+    width: 70%;
+    z-index: 1;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    height: 100%;
+    border-radius: 50px;
+}
+
+
+
+@media (max-width: 1024px) {
+    .hero-section {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .hero-text {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .carousel {
+        width: 90%;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 10px;
+        height: auto;
+    }
+
+    .hero-text {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .carousel-inner img {
+        border-radius: 20px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .carousel-inner img {
+        border-radius: 10px;
+    }
+} */
+
+
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('hero_first_back/img2.jpg'); /* Background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center;
+    background-repeat: no-repeat; /* Prevent background image repeat */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10%; 
+    padding-right: 10%;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit;
+    background-size: cover; /* Ensure blur background also covers the entire section */
+    background-position: center;
+    background-repeat: no-repeat; /* Prevent background image repeat */
     filter: blur(8px); /* Blurs the background image for visual effect */
     z-index: -1;
 }
@@ -186,6 +327,7 @@ nav a img {
     .hero-section {
         padding: 10px;
         height: auto;
+        background-size: contain; /* On small screens, switch to contain to fit the image */
     }
 
     .hero-text {
@@ -213,6 +355,11 @@ nav a img {
 
 /* For small mobile devices */
 @media (max-width: 576px) {
+    .hero-section {
+        height: 80vh; /* Slightly reduce height on small screens */
+        background-size: contain; /* Ensure the image fits within the small screen */
+    }
+
     .hero-text h1 {
         font-size: 1.8rem;
     }
