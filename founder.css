@@ -5,30 +5,57 @@
     box-sizing: border-box;
 }
 
-
-
-
 /* Container for background color and paragraphs */
 .container {
     background-image: url(photos/founder1/img3.jpg);
     object-fit: cover;
     position: relative;
     overflow: hidden;
-    padding: 20px; /* Adds padding around the text */
+    padding: 20px;
     border-radius: 10px; /* Optional: rounds the corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
     max-width: 800px; /* Maximum width for the container */
     width: 90%; /* Makes the container responsive */
-    min-height: 200px; /* Ensures a minimum height */
+    min-height: 200px;
     text-align: center; /* Centers the text */
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
 }
 
 .description {
     font-size: 16px;
-    color: #333; /* Darker text color for readability */
+    color: #333;
     margin: 10px 0;
     font-weight: bold;
 }
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; /* Reduce padding for smaller screens */
+        width: 95%; /* Make the container wider to use more screen space */
+    }
+
+    .description {
+        font-size: 14px; /* Reduce font size for readability on smaller screens */
+    }
+}
+
+/* For phones and extra small devices */
+@media (max-width: 576px) {
+    .container {
+        padding: 10px; /* Further reduce padding for phones */
+        min-height: 150px; /* Adjust minimum height for smaller screens */
+        width: 100%; /* Make it take the full width on very small devices */
+    }
+
+    .description {
+        font-size: 13px; /* Further reduce font size for small phones */
+    }
+}
+
 
 
 

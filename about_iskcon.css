@@ -23,7 +23,7 @@ body, html {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    color: white; /* Ensures text is visible on the background image */
+    color: white;
 }
 
 .first-container {
@@ -46,20 +46,20 @@ body, html {
 /* Heading Styles */
 .top_heading {
     font-size: 48px;
-    color: white; /* Golden color for the heading */
+    color: white;
 }
 
 /* Paragraph Styles */
 .container p {
     font-size: 18px;
     line-height: 1.6;
-    color: white; /* White color for paragraphs */
+    color: white;
 }
 
 /* Heading inside container */
 .container h1 {
     font-size: 32px;
-    color: goldenrod; /* Golden color for sub-headings */
+    color: goldenrod;
     margin-top: 20px;
 }
 
@@ -71,6 +71,38 @@ body, html {
 
     .container {
         padding: 15px;
+    }
+
+    .container h1 {
+        font-size: 28px;
+    }
+
+    .container p {
+        font-size: 16px;
+    }
+}
+
+/* For mobile devices (max-width: 576px) */
+@media (max-width: 576px) {
+    .Hero {
+        height: 90vh; /* Adjust hero height for smaller screens */
+        padding: 0 10px; /* Add padding to avoid content touching the screen edges */
+    }
+
+    .top_heading {
+        font-size: 28px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .container h1 {
+        font-size: 24px;
+    }
+
+    .container p {
+        font-size: 14px;
     }
 }
 
