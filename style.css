@@ -1,17 +1,9 @@
 /* General Navbar Styles */
 
 .navbar {
-    /* background-color: #f2c14e; */
     padding: 1rem;
-    /* background-color: #e6e0aa; */
     background-color: #e0c844;
 }
-
-
-/* .navbar.scrolled {
-    background-color: #d87408; 
-   
-} */
 
 .navbar-brand {
     font-size: 1.5rem;
@@ -23,7 +15,6 @@
     border: none;
     background-color: transparent; /* No background for the toggler */
 }
-
 
 nav a img {
     height: 100px;
@@ -45,7 +36,7 @@ nav a img {
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-    color:rgb(185 65 134); /* Hover effect for links */
+    color: rgb(185 65 134); /* Hover effect for links */
 }
 
 .navbar-nav .dropdown-menu {
@@ -65,165 +56,79 @@ nav a img {
     color: #6c757d; /* Disabled link color */
 }
 
-
 .btn-outline-success {
     border-color: rgb(185, 65, 134) !important;
     color: black !important;
     width: 200px;
     height: 60px;
     font-weight: bold;
-    font-size: 1.30rem !important; /* Adjust font size here */
-    
+    font-size: 1.30rem !important; /* Adjust font size */
 }
-
 
 .btn-outline-success:hover {
     background-color: rgb(185, 65, 134) !important;
     color: #fff !important;
 }
 
+/* Responsive Design */
 
-
-
-
-
-/* .hero-section {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-    background-image: url('hero_first_back/img2.jpg'); 
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat; 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 10%; 
-    padding-right: 10%;
-}
-
-.hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: inherit;
-    background-size: cover;
-    background-position: center;
-    filter: blur(8px); 
-    z-index: -1;
-}
-
-.hero-text {
-    width: 50%;
-    z-index: 1;
-    color: white;
-    padding: 20px;
-}
-
-.hero-text h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: rgb(185, 65, 134);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.hero-text p {
-    font-size: 1.5rem;
-    color: rgb(185, 65, 134);
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    display: flex;
-    justify-content: center;
-}
-
-.carousel {
-    width: 70%;
-    z-index: 1;
-}
-
-.carousel-inner img {
-    object-fit: cover;
-    height: 100%;
-    border-radius: 50px;
-}
-
-
-
-@media (max-width: 1024px) {
-    .hero-section {
-        flex-direction: column;
-        justify-content: center;
-        height: auto;
-        padding: 20px;
+/* For tablets and smaller devices */
+@media (max-width: 992px) {
+    .navbar-brand {
+        font-size: 1.3rem; /* Adjust font size for smaller screens */
     }
 
-    .hero-text {
-        width: 100%;
-        text-align: center;
-        padding: 0;
-        margin-bottom: 20px;
+    .navbar-nav .nav-item .nav-link {
+        margin-right: 0.5rem; /* Reduce margin for better spacing on small screens */
+        font-size: 1rem; /* Adjust font size for smaller devices */
     }
 
-    .carousel {
-        width: 90%;
+    nav a img {
+        height: 80px; /* Adjust logo size for tablets */
+        width: 80px;
     }
 
-    .hero-text h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-text p {
-        font-size: 1.3rem;
+    .btn-outline-success {
+        width: 180px;
+        height: 55px;
+        font-size: 1.1rem; /* Slightly reduce button size */
     }
 }
 
-
-@media (max-width: 768px) {
-    .hero-section {
-        padding: 10px;
-        height: auto;
-    }
-
-    .hero-text {
-        width: 100%;
-        padding: 0;
-        margin-bottom: 10px;
-    }
-
-    .hero-text h1 {
-        font-size: 2rem;
-    }
-
-    .hero-text p {
-        font-size: 1.2rem;
-    }
-
-    .carousel {
-        width: 100%;
-    }
-
-    .carousel-inner img {
-        border-radius: 20px;
-    }
-}
-
-
+/* For phones and extra small devices */
 @media (max-width: 576px) {
-    .hero-text h1 {
-        font-size: 1.8rem;
+    .navbar-brand {
+        font-size: 1.2rem; /* Further adjust font size */
     }
 
-    .hero-text p {
-        font-size: 1rem;
+    nav a img {
+        height: 60px; /* Adjust logo size for phones */
+        width: 60px;
     }
 
-    .carousel-inner img {
-        border-radius: 10px;
+    .navbar-nav {
+        text-align: center; /* Center nav items on small screens */
     }
-} */
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 0.9rem; /* Smaller font for mobile */
+        margin-right: 0; /* Remove margin */
+    }
+
+    .btn-outline-success {
+        width: 160px;
+        height: 50px;
+        font-size: 1rem; /* Adjust button size */
+    }
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -429,8 +334,6 @@ hero-section::before {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    
-    
 }
 
 .donation-card {
@@ -442,7 +345,7 @@ hero-section::before {
     padding: 20px;
     transition: all 0.3s ease;
     cursor: pointer;
-    color:rgb(185, 65, 134);
+    color: rgb(185, 65, 134);
 }
 
 .donation-card:hover {
@@ -463,6 +366,59 @@ hero-section::before {
 .donation-card p {
     font-size: 1rem;
     color: #666;
+}
+
+/* Responsive Design */
+
+/* For tablets and medium devices */
+@media (max-width: 1024px) {
+    .donation-card {
+        width: 45%; /* Allow two cards per row on tablets */
+    }
+
+    .donation-section h2 {
+        font-size: 2rem; /* Adjust heading size for tablets */
+    }
+}
+
+/* For small devices like phones */
+@media (max-width: 768px) {
+    .donation-card {
+        width: 100%; /* Make the donation cards full width on smaller devices */
+        margin-bottom: 20px; /* Add margin for spacing between stacked cards */
+    }
+
+    .donation-section h2 {
+        font-size: 1.8rem; /* Reduce heading size */
+    }
+
+    .donation-section h4 {
+        font-size: 1.3rem; /* Adjust subheading size */
+    }
+
+    .donation-section p {
+        font-size: 1rem; /* Reduce paragraph size */
+    }
+}
+
+/* For extra small devices */
+@media (max-width: 576px) {
+    .donation-card {
+        width: 100%; /* Full width cards on smallest screens */
+        margin-bottom: 15px;
+    }
+
+    .donation-section h2 {
+        font-size: 1.6rem; /* Further reduce heading size */
+    }
+
+    .donation-section p {
+        font-size: 0.9rem; /* Reduce paragraph size for small screens */
+    }
+
+    .donation-card h5 {
+        font-size: 1.1rem; /* Adjust card title size */
+    }
 }
 
 
@@ -555,25 +511,52 @@ body {
     background-color: #fff;
 }
 
+/* Responsive Design */
 
+/* For tablets and medium devices */
+@media (max-width: 1024px) {
+    .video-card {
+        width: 45%; /* Allow two cards per row on tablets */
+    }
 
+    .section-heading {
+        font-size: 1.75rem; /* Slightly reduce heading size */
+    }
+}
 
+/* For small devices like phones */
+@media (max-width: 768px) {
+    .video-card {
+        width: 100%; /* Make the video cards full width on smaller devices */
+    }
 
+    .section-heading {
+        font-size: 1.5rem; /* Reduce heading size further */
+    }
 
+    .video-title {
+        font-size: 0.9rem; /* Reduce video title font size for smaller screens */
+    }
 
+    .play-button i {
+        font-size: 20px; /* Adjust play button size */
+    }
+}
 
+/* For extra small devices */
+@media (max-width: 576px) {
+    .section-heading {
+        font-size: 1.3rem; /* Further reduce heading size for smallest screens */
+    }
 
+    .video-title {
+        font-size: 0.8rem; /* Make video title smaller */
+    }
 
-
-
-
-
-
-
-
-
-
-
+    .play-button i {
+        font-size: 18px; /* Adjust play button size */
+    }
+}
 
 
 
@@ -600,12 +583,10 @@ body {
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; /* Distribute content across the section */
     padding: 20px;
     color: white;
 }
-
-
 
 .schedule-video {
     position: absolute;
@@ -615,7 +596,7 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    pointer-events: none; /* Ensure video doesn't interfere with interactions */
+    pointer-events: none;
 }
 
 .schedule-content {
@@ -630,7 +611,7 @@ body {
 
 .schedule-content h2 {
     font-size: 1.5rem;
-    color: #ff5a75; 
+    color: #ff5a75;
 }
 
 .schedule-times p {
@@ -639,15 +620,16 @@ body {
     line-height: 1.5;
 }
 
-.schedule-times p{
+.schedule-times p {
     font-weight: bold;
     margin-left: 1rem;
-    color:#ff5a75;
+    color: #ff5a75;
 }
+
 .schedule-times p span {
     font-weight: bold;
     margin-left: 1rem;
-    color:beige
+    color: beige;
 }
 
 .learn-more-btn {
@@ -662,7 +644,7 @@ body {
 }
 
 .learn-more-btn:hover {
-    background-color:goldenrod;
+    background-color: goldenrod;
 }
 
 .schedule-image img {
@@ -673,6 +655,86 @@ body {
 .schedule-image {
     max-width: 40%;
 }
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .daily-schedule-section {
+        flex-direction: column; /* Stack content vertically */
+        justify-content: center;
+        height: auto; /* Allow content to dictate height */
+        padding: 10px;
+    }
+
+    .schedule-content {
+        max-width: 90%; /* Make text area wider on smaller screens */
+        text-align: center; /* Center the text for readability */
+    }
+
+    .schedule-content h1 {
+        font-size: 2.5rem; /* Reduce heading size */
+    }
+
+    .schedule-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .schedule-times p {
+        font-size: 1.1rem;
+    }
+
+    .schedule-image {
+        max-width: 80%; /* Adjust the image size */
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .daily-schedule-section {
+        padding: 5px;
+        height: auto; /* Allow the section to expand with content */
+    }
+
+    .schedule-content h1 {
+        font-size: 2rem;
+    }
+
+    .schedule-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .schedule-times p {
+        font-size: 1rem;
+    }
+
+    .learn-more-btn {
+        padding: 0.5rem 1rem; /* Adjust button size */
+    }
+
+    .schedule-image {
+        max-width: 90%; /* Ensure image is larger on smaller screens */
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .schedule-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .schedule-content h2 {
+        font-size: 1rem;
+    }
+
+    .schedule-times p {
+        font-size: 0.9rem;
+    }
+
+    .schedule-image {
+        max-width: 100%; /* Make image take full width on mobile */
+        margin-top: 10px;
+    }
+}
+
 
 
 
@@ -721,17 +783,15 @@ body {
     font-size: 16px;
 }
 
-.donate-btn:hover{
-    background-color:goldenrod;
+.donate-btn:hover {
+    background-color: goldenrod;
 }
-
-
-
 
 .footer-links-section {
     display: flex;
     flex: 2;
     justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .footer-column {
@@ -741,7 +801,7 @@ body {
 .footer-column h4 {
     margin-bottom: 10px;
     font-size: 18px;
-    color:#ff4081
+    color: #ff4081;
 }
 
 .footer-column ul {
@@ -778,5 +838,87 @@ body {
 .footer-social a:hover {
     color: #ff4081;
 }
+
+/* Responsive adjustments */
+
+/* Medium Devices (Tablets) */
+@media (max-width: 1024px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo-section {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-links-section {
+        justify-content: center;
+    }
+
+    .footer-column {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer-social {
+        margin-top: 20px;
+    }
+}
+
+/* Small Devices (Phones) */
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer-logo {
+        width: 80px; /* Reduce logo size on small devices */
+    }
+
+    .donate-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .footer-column h4 {
+        font-size: 16px;
+    }
+
+    .footer-column ul li a {
+        font-size: 13px;
+    }
+}
+
+/* Extra Small Devices (Small Phones) */
+@media (max-width: 576px) {
+    .footer {
+        padding: 10px;
+    }
+
+    .footer-logo-section {
+        margin-bottom: 15px;
+    }
+
+    .footer-column h4 {
+        font-size: 14px;
+    }
+
+    .footer-column ul li a {
+        font-size: 12px;
+    }
+
+    .donate-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .footer-social a {
+        font-size: 16px;
+    }
+}
+
 
 
