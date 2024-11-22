@@ -229,20 +229,20 @@ nav a img {
 
 .hero-section {
     position: relative;
-    height: 100vh;
+    min-height: 100vh; /* Ensures the section always takes full height of the viewport */
     overflow: hidden;
-    background-image: url('hero_first_back/img2.jpg'); /* Background image */
-    background-size: cover; /* Ensures the image covers the entire section */
+    background-image: url('hero_first_back/img2.jpg');
+    background-size: cover; /* Ensures the image covers the full section */
     background-position: center;
-    background-repeat: no-repeat; /* Prevent background image repeat */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 10%; 
+    padding-left: 10%;
     padding-right: 10%;
 }
 
-.hero-section::before {
+hero-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -250,13 +250,12 @@ nav a img {
     right: 0;
     bottom: 0;
     background-image: inherit;
-    background-size: cover; /* Ensure blur background also covers the entire section */
+    background-size: cover; /* Ensures the blurred background also covers the section */
     background-position: center;
-    background-repeat: no-repeat; /* Prevent background image repeat */
-    filter: blur(8px); /* Blurs the background image for visual effect */
+    background-repeat: no-repeat;
+    filter: blur(8px);
     z-index: -1;
 }
-
 .hero-text {
     width: 50%;
     z-index: 1;
@@ -326,7 +325,7 @@ nav a img {
 @media (max-width: 768px) {
     .hero-section {
         padding: 10px;
-        height: auto;
+        min-height: 80vh;
         background-size: contain; /* On small screens, switch to contain to fit the image */
     }
 
@@ -357,7 +356,7 @@ nav a img {
 @media (max-width: 576px) {
     .hero-section {
         width: 100%;
-        height: 80vh; /* Slightly reduce height on small screens */
+        min-height: 70vh; /* Slightly reduce height on small screens */
         background-size: contain; /* Ensure the image fits within the small screen */
     }
 
