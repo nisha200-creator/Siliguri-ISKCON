@@ -1,116 +1,179 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
-
+/* General Reset */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: Arial, sans-serif;
+    box-sizing: border-box; 
 }
 
-/* Hero Section */
-.Hero {
-    background-image: url('photos/founder1/img1.jpg'); /* Replace with your image path */
+  /* Hero Section */
+  .Hero {
+    display: grid; 
+    place-items: center; 
+    background-image: url('photos/founder1/img1.jpg'); 
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    min-height: 100vh;
     text-align: center;
     color: white;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 50px; 
+    
 }
 
-.first-container {
+  
+  /* Overlay for better text visibility */
+  .Hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+  }
+  
+  /* Content Wrapper */
+  .content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 1;
     width: 100%;
+    max-width: 900px; 
+  }
+
+  .container {
+    background-color: rgba(222, 184, 135, 0.6); /* Burlywood with 60% opacity */
+    padding: 30px;
+    border-radius: 15px;
+    color: black; /* Text color for better readability */
+    z-index: 1;
+    width: 100%;
+    max-width: 900px;
+    margin: 20px;
+}
+  
+
+
+  /* Main Heading */
+  .top_heading {
+    font-size: 4rem;
+    color: red;
+    font-family: "Tangerine", serif;
     margin-bottom: 20px;
+    font-weight: bold;
+    animation: glowing-text 2s infinite; 
+  }
+  @keyframes glowing-text {
+    0% {
+        text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px orange, 0 0 30px red;
+    }
+    50% {
+        text-shadow: 0 0 10px orange, 0 0 20px red, 0 0 30px red, 0 0 40px yellow;
+    }
+    100% {
+        text-shadow: 0 0 5px orange, 0 0 10px gold, 0 0 20px orange, 0 0 30px red;
+    }
 }
-
-/* Content container */
-.container {
-    background-color: rgba(0, 0, 0, 0.6); /* Transparent black background for readability */
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 800px;
-    color: white;
-}
-
-/* Heading Styles */
-.top_heading {
-    font-size: 48px;
-    color: white;
-}
-
-/* Paragraph Styles */
-.container p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: white;
-}
-
-/* Heading inside container */
-.container h1 {
-    font-size: 32px;
-    color: goldenrod;
+  
+  
+  
+  /* Heading inside content */
+  .container h1 {
+    font-size: 3rem;
+    color: red;
     margin-top: 20px;
+    font-family: "Tangerine", serif;
+    font-weight: bold;
+  
+  }
+  
+  /* Paragraph Text */
+  .container p {
+    font-size: 2.5rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: white;
+    font-family: "Tangerine", serif;
+    font-weight: bold;
+    animation: glowing-text 2s infinite; 
+  }
+  @keyframes glowing-text {
+    0% {
+        text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px orange, 0 0 30px red;
+    }
+    50% {
+        text-shadow: 0 0 10px orange, 0 0 20px red, 0 0 30px red, 0 0 40px yellow;
+    }
+    100% {
+        text-shadow: 0 0 5px orange, 0 0 10px gold, 0 0 20px orange, 0 0 30px red;
+    }
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
     .top_heading {
-        font-size: 36px;
+      font-size: 2.5rem;
     }
-
+  
     .container {
-        padding: 15px;
+      padding: 20px;
     }
-
+  
     .container h1 {
-        font-size: 28px;
+      font-size: 28px;
     }
-
+  
     .container p {
-        font-size: 16px;
+      font-size: 1.8rem;
     }
-}
-
-/* For mobile devices (max-width: 576px) */
-@media (max-width: 576px) {
+  }
+  
+  /* For tablets and smaller devices */
+  @media (max-width: 768px) {
+    .top_heading {
+      font-size: 2rem;
+    }
+  
+    .container {
+      padding: 15px;
+    }
+  
+    .container h1 {
+      font-size: 24px;
+    }
+  
+    .container p {
+      font-size: 1.6rem;
+    }
+  }
+  
+  /* For very small devices */
+  @media (max-width: 576px) {
     .Hero {
-        height: 90vh; /* Adjust hero height for smaller screens */
-        padding: 0 10px; /* Add padding to avoid content touching the screen edges */
+      height: 80vh;
     }
-
+  
     .top_heading {
-        font-size: 28px;
+      font-size: 1.6rem;
     }
-
+  
     .container {
-        padding: 10px;
+      padding: 10px;
     }
-
+  
     .container h1 {
-        font-size: 24px;
+      font-size: 22px;
     }
-
+  
     .container p {
-        font-size: 14px;
+      font-size: 1.4rem;
     }
-}
-
-
-
-
-
-
-
-
-
+  }
+  

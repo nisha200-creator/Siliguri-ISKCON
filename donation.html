@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="donation.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="#">
+
+
+     <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="evo-calendar.min.css"/>
+
+    <link rel="stylesheet" href="evo-calendar.orange-coral.css"/>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="logo/Purple.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item dropdown">
+                <li class="nav-item">
+                    <!-- <a class="nav-link active" aria-current="page" href="index.html">Home</a> -->
+                    <a class="nav-link " href="index.html" >
+                      Home
+                    </a>
+                  </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About Us
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="founder.html">Founder</a></li>
+                  <li><a class="dropdown-item" href="about_iskcon.html">What is ISKCON ?</a></li>
+                  <li><a class="dropdown-item" href="#">What is Vaishnavism ?</a></li>
+                  <li><a class="dropdown-item" href="#">Volunteers</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Activities
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Arts</a></li>
+                  <li><a class="dropdown-item" href="#">Festivals</a></li>
+                  <li><a class="dropdown-item" href="#">Education</a></li>
+                  <li><a class="dropdown-item" href="#">Food Relief Programs</a></li>
+                  <li><a class="dropdown-item" href="#">Music - Kirtans</a></li>
+                  <li><a class="dropdown-item" href="#">Iskcon Tribal Care</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Festivals
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Hare Krishna Utsav</a></li>
+                  <li><a class="dropdown-item" href="#">Nityanand Trayadasi / Annual Day Celebration </a></li>
+                  <li><a class="dropdown-item" href="#">Rama Navami</a></li>
+                  <li><a class="dropdown-item" href="#">Goura Purnima</a></li>
+                  <li><a class="dropdown-item" href="#">Chandan Yatra</a></li>
+                  <li><a class="dropdown-item" href="#">Narasimha Chaturdasi</a></li>
+                  <li><a class="dropdown-item" href="#">Snana Yatra</a></li>
+                  <li><a class="dropdown-item" href="#">Balaram Jayanti</a></li>
+                  <li><a class="dropdown-item" href="#">Janmashtami</a></li>
+                  <li><a class="dropdown-item" href="#">Radhahtami</a></li>
+                  <li><a class="dropdown-item" href="#">Kartik Deepavali</a></li>
+                  <li><a class="dropdown-item" href="#">Gavardhhan puja</a></li>
+                  <li><a class="dropdown-item" href="#">Gopahtami</a></li>
+                  <li><a class="dropdown-item" href="#">Geeta Jayanti</a></li>
+                  <li><a class="dropdown-item" href="#">Holy Name Week</a></li>
+                  <li><a class="dropdown-item" href="#">Sankirtan Padayatra</a></li>
+          
+
+                </ul>
+              </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#liveDarshan" role="button"  aria-expanded="false"   >
+              Live Darshan
+            </a>
+            <!-- <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul> -->
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#contact-details" role="button"  aria-expanded="false">
+              Contact Us
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          
+
+          
+          
+        </ul>
+        <div class="footer-social">
+          <a href="https://fb.openinapp.co/oznfd"><i class="fa-brands fa-facebook" style="color:gold;"></i></a>
+          <a href="https://chat.whatsapp.com/CswbugHO2Me7rAY6uHGyiS"><i class="fa-brands fa-square-whatsapp" style="color: gold;"></i></a>
+          <a href="https://www.instagram.com/iskcontvsiliguri/"><i class="fa-brands fa-instagram" style="color:gold;"></i></a>
+          <a href="https://yt.openinapp.co/0df8z"><i class="fa-brands fa-youtube" style="color:gold;"></i></a>
+      <!-- </div>
+            <button class="btn btn-outline-success" type="submit">Donate Now</button>
+          
+    </div> -->
+
+    <div>
+      <a href="donation.html">
+          <button class="btn btn-outline-success" type="submit">Donate Now</button>
+      </a>
+  </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="donation-section">
+    <div class="donation-content">
+        <h1>Charity Is Priority</h1>
+        <p>Giving help To Those Who Need It</p>
+        <!-- <a href="#donation-details" class="donate-btn">Donate Now</a> -->
+    </div>
+</section>
+
+
+
+
+<div class="donation-container">
+  <div class="form-left">
+      <h2>Make Your Donation</h2>
+      <form>
+          <label for="donation-amount">Amount</label>
+          <input type="number" id="donation-amount" placeholder="Enter amount">
+          <label for="donor-name">Name</label>
+          <input type="text" id="donor-name" placeholder="Enter your name">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email">
+          <button type="submit" class="donate-button">Donate Now</button>
+      </form>
+  </div>
+  <div class="form-right">
+      <h4>Your Donation Details</h4>
+      <p>We understand that there are many people and organizations seeking support.</p>
+      <div>
+        <strong>Your Donation:</strong> ₹<span id="donation-amount-right">0</span>
+    </div>
+    <div>
+        <strong>Total:</strong> ₹<span id="total-amount-right">0</span>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer" id="contact-details">
+  <div class="footer-container">
+      <div class="footer-logo-section">
+          <img src="logo/Purple.png" alt="ISKCON Pune Logo" width="30" height="80" class="footer-logo">
+          <!-- <img src="your-logo.png" alt="ISKCON Pune Logo" class="footer-logo"> -->
+          <p>Your support will help us continue our mission of spreading Krishna Consciousness, hope, and happiness across the world. Donate now!</p>
+          <a href="#" class="donate-btn">Donate Now <span>❤</span></a>
+      </div>
+      <div class="footer-links-section">
+          <div class="footer-column">
+              <h4>Contacts</h4>
+              <p>Iskcon Rd, Ward 40, Gitalpara,<br>
+                    Siliguri, West Bengal 734006</p>
+              <p>Email: ****@gmail.com</p>
+              <p>Phone: +91 0000 000000</p>
+              <p>ISKCON Guest House: +91 0000 000000</p>
+              <p>For All Information: +91 0000 000000</p>
+          </div>
+          <div class="footer-column">
+              <h4>About</h4>
+              <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Deities and Live Darshan</a></li>
+              </ul>
+          </div>
+          <div class="footer-column">
+              <h4>Donate Now</h4>
+              <ul>
+                  <li><a href="#">Sri Balaji Vigraha Seva</a></li>
+                  <li><a href="#">Sri Sri Radha Vrindavanchandra Vigraha Seva</a></li>
+                  <li><a href="#">Go Seva</a></li>
+                  <li><a href="#">Sadhu Bhojan</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div class="footer-social">
+      <a href="https://fb.openinapp.co/oznfd"><i class="fa-brands fa-facebook" style="color: #FFD43B;"></i></a>
+      <a href="https://chat.whatsapp.com/CswbugHO2Me7rAY6uHGyiS"><i class="fa-brands fa-square-whatsapp" style="color: #FFD43B;"></i></a>
+      <a href="https://www.instagram.com/iskcontvsiliguri/"><i class="fa-brands fa-instagram" style="color: #FFD43B;"></i></a>
+      <a href="https://yt.openinapp.co/0df8z"><i class="fa-brands fa-youtube" style="color: #FFD43B;"></i></a>
+  </div>
+</footer>
+
+    
+<script src="app.js"></script>
+</body>
+</html>
